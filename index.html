@@ -12,29 +12,46 @@ body{
 background:#0f172a;
 color:white;
 font-family:Arial;
+margin:0;
 text-align:center;
-padding-top:120px;
-max-width:900px;
-margin:auto;
 }
 
-h1{
+header{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:20px;
+font-size:24px;
+font-weight:bold;
+}
+
+header img{
+width:40px;
+height:40px;
+}
+
+.hero{
+margin-top:80px;
+}
+
+.hero h1{
 font-size:60px;
 }
 
-p{
-font-size:20px;
+.hero p{
+font-size:22px;
 color:#cbd5f5;
 }
 
 button{
 background:#22c55e;
 border:none;
-padding:15px 30px;
+padding:16px 34px;
 font-size:18px;
 border-radius:10px;
 cursor:pointer;
-margin-top:20px;
+margin-top:25px;
 }
 
 button:hover{
@@ -42,13 +59,46 @@ background:#16a34a;
 }
 
 section{
+max-width:900px;
+margin:auto;
 margin-top:120px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.feature-box{
+background:#111827;
+padding:25px;
+border-radius:12px;
+}
+
+.feature-box h3{
+margin-top:10px;
+}
+
+.principles{
+background:#020617;
+padding:60px;
+margin-top:120px;
+}
+
+.principles p{
+max-width:800px;
+margin:auto;
+margin-top:20px;
+color:#cbd5f5;
 }
 
 footer{
 margin-top:120px;
+padding:40px;
 font-size:14px;
-color:#aaa;
+color:#9ca3af;
 }
 
 </style>
@@ -56,9 +106,16 @@ color:#aaa;
 
 <body>
 
-<h1>Meinhua</h1>
+<header>
+<img src="favicon.png">
+<div>Meinhua</div>
+</header>
 
-<p>Open source internet tools</p>
+<div class="hero">
+
+<h1>Browse the internet without intrusive ads</h1>
+
+<p>Fast, open source ad blocking tools for a cleaner web.</p>
 
 <h2>MeinClose</h2>
 
@@ -66,28 +123,69 @@ color:#aaa;
 
 <button>Download</button>
 
+</div>
 
 <section>
 
-<h2>Features</h2>
+<h2>Why use MeinClose?</h2>
 
-<p>⚡ Fast ad blocking</p>
-<p>🛡 Tracker protection</p>
-<p>🔓 Open source</p>
-<p>💻 Lightweight extension</p>
+<div class="features">
+
+<div class="feature-box">
+<h3>⚡ Faster browsing</h3>
+<p>Blocks ads that slow down websites and improves page loading speed.</p>
+</div>
+
+<div class="feature-box">
+<h3>🛡 Privacy protection</h3>
+<p>Prevents trackers and malicious advertising scripts.</p>
+</div>
+
+<div class="feature-box">
+<h3>🔓 Open source</h3>
+<p>Fully transparent code that anyone can inspect or contribute to.</p>
+</div>
+
+<div class="feature-box">
+<h3>💻 Lightweight</h3>
+<p>Minimal resource usage designed for performance.</p>
+</div>
+
+</div>
 
 </section>
-
 
 <section>
 
 <h2>Supported Browsers</h2>
 
 <p>Google Chrome</p>
+<p>Brave Browser</p>
 <p>Microsoft Edge</p>
 
 </section>
 
+<div class="principles">
+
+<h2>Our principles</h2>
+
+<p>
+The following rules have always applied and will always apply to everyone, without exception.
+</p>
+
+<p>
+Participants cannot pay to bypass the criteria. All advertisements must comply with the established standards.
+</p>
+
+<p>
+We listen to our users. If an acceptable advertisement is reported by the community for a legitimate reason, it will be removed from the whitelist.
+</p>
+
+<p>
+We can maintain our open source product free by charging large companies a fee for whitelist services. For smaller partners, these services may be offered free of charge.
+</p>
+
+</div>
 
 <footer>
 
@@ -95,7 +193,6 @@ color:#aaa;
 <p>Open source internet tools</p>
 
 </footer>
-
 
 </body>
 </html>
